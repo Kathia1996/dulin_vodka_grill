@@ -526,3 +526,6 @@ function child_add_scripts() {
 
     wp_enqueue_script( 'script' );
 }
+
+/* Отключаем админ панель для всех пользователей. */
+  show_admin_bar(false);
