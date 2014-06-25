@@ -113,6 +113,7 @@ textarea {
 body {
 	background: #f5f5f5;
 	height: 100%;      margin: 0;        
+	background: url(images/bg.png) no-repeat;  background-size: 100% 100%;
 	padding: 0;
 }
 
@@ -143,7 +144,7 @@ h5,
 h6 {
 	clear: both;
 	font-weight: 700;
-	margin: 36px 0 12px;
+	margin: 16px 0 12px;
 }
 
 h1 {
@@ -819,7 +820,7 @@ span + .edit-link:before,
  */
 
 .site {
-	background-color: #fff;
+	/* background-color: #fff; */
 	/* max-width: 1260px; */
 	position: relative;
 	height: 100%;
@@ -848,7 +849,7 @@ span + .edit-link:before,
 }
 
 .site-header {
-	background-color: #000;
+	/* background-color: #000; */
 	max-width: 100%;
 	position: relative;
 	width: 100%;
@@ -2737,10 +2738,13 @@ a.post-thumbnail:hover {
 .site-footer {
 	background-color: #000;
 	font-size: 12px;
-	position: relative;
+	position: fixed;
 	z-index: 3;
+	left: 0;
 	/* height: 150px; */
 	/* margin-top: -100px; */
+	right: 0;
+	bottom: 0;
 }
 
 .footer-sidebar {
@@ -4218,15 +4222,15 @@ a.post-thumbnail:hover {
 	}
 }
 .site-main {
-	height: 100%;
-	min-height: 100%;
-	background: url(images/bg.png) no-repeat;
-	background-size: 100% 100%;
-	margin: -90px 0 0 0;
+	/* height: 100%; */
+	/* min-height: 100%; */
+	/* background: url(images/bg.png) no-repeat; */
+	/* background-size: 100% 100%; */
+	/* margin: -90px 0 0 0; */
 }
 .site-title__head {
 	text-align: center;
-	height: 220px;
+	height: 170px;
 	width: 100%;
 }
 .site-title__head-img {
@@ -4246,8 +4250,20 @@ a.post-thumbnail:hover {
     -o-background-size: cover;
     
 	background-size: 100% 100%;
-	width: 25%;
+	width: 20%;
 	height: 100%;
 	display: block;
 	margin: 0 auto;
+}
+
+@media (max-width: 1400px) {
+  	.site-title__head {
+		text-align: center;
+		height: 80px;
+		width: 100%;
+	}
+	.site-title__head-link {
+		width: 12%;
+	}
+
 }
