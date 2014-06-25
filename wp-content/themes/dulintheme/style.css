@@ -4222,11 +4222,11 @@ a.post-thumbnail:hover {
 	min-height: 100%;
 	background: url(images/bg.png) no-repeat;
 	background-size: 100% 100%;
-	margin: -10px 0 0 0;
+	margin: -90px 0 0 0;
 }
 .site-title__head {
 	text-align: center;
-	height: auto;
+	height: 220px;
 	width: 100%;
 }
 .site-title__head-img {
@@ -4238,4 +4238,16 @@ a.post-thumbnail:hover {
 .header-main__head {
 	height: auto;
 	width: 100%;
+}
+.site-title__head-link {
+	background: url(images/logo.png) no-repeat;
+	/* -webkit-background-size: cover; */
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    
+	background-size: 100% 100%;
+	width: 25%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
 }
