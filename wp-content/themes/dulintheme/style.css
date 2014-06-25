@@ -853,7 +853,7 @@ span + .edit-link:before,
 	max-width: 100%;
 	position: relative;
 	width: 100%;
-	height: auto;
+	height: 400px;
 	z-index: 4;
 }
 
