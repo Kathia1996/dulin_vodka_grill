@@ -510,3 +510,19 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
+add_action( 'wp_enqueue_scripts', 'child_add_scripts' );
+
+/**
+ * Register and enqueue a script that does not depend on a JavaScript library.
+ */
+function child_add_scripts() {
+    wp_register_script(
+        'script',
+        get_stylesheet_directory_uri() . '/js/script.js',
+        false,
+        '1.0',
+        true
+    );
+
+    wp_enqueue_script( 'script' );
+}
