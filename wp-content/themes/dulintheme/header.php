@@ -37,7 +37,7 @@
 		<div class="header-main__head">
 			<h1 class="site-title__head">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img class="site-title__head-img" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo" width="493" height="260">
+					<img class="site-title__head-img" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo" width="493">
 				</a>
 			</h1>
 

@@ -4226,8 +4226,16 @@ a.post-thumbnail:hover {
 }
 .site-title__head {
 	text-align: center;
+	height: auto;
+	width: 100%;
 }
 .site-title__head-img {
 	width: 493px;
 	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+.header-main__head {
+	height: auto;
+	width: 100%;
 }
