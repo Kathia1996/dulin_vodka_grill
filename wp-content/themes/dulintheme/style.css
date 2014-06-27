@@ -3354,7 +3354,7 @@ a.post-thumbnail:hover {
 	}
 
 	.site-info {
-		padding: 15px 30px;
+		padding: 5px 30px;
 	}
 }
 
@@ -4255,15 +4255,78 @@ a.post-thumbnail:hover {
 	display: block;
 	margin: 0 auto;
 }
-
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	font-family: Myriad Pro, Arial, sans-serif;
+	/* font-size: 23px; */
+	color: #fff;
+	font-weight: bold;
+}
+.wrapper strong {
+	display: block;
+	font-size: 23px;
+	line-height: 25px;
+}
+.wrapper__inner {
+	float: left;
+	width: 100%;
+}
+.col-fl-left {
+	float: left;
+	width: 36%;
+	padding: 10px 0;
+	margin: 0 2%;
+	display: inline;
+	text-align: right;
+}
+.col-fl-center {
+	float: left;
+	width: 20%;
+	padding: 10px 0;
+	margin: 0 0 0 2%;
+	text-align: center;
+}
+.col-fl-right {
+	float: right;
+	width: 32%;
+	padding: 10px 0;
+	margin: 0 2% 0 0;
+	display: inline;
+	text-align: left;
+}
+.social-btn {
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+}
+.social-btn__facebook {
+	background-image: url(images/ico-facebook.png);
+}
+.social-btn__instagram {
+	background-image: url(images/ico-instagram.png);
+}
 @media (max-width: 1400px) {
   	.site-title__head {
 		text-align: center;
-		height: 80px;
+		height: 100px;
 		width: 100%;
 	}
 	.site-title__head-link {
 		width: 12%;
 	}
-
+	.social-btn {
+		width: 37px;
+		height: 37px;
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+	}
+	.col-fl-center {
+		text-align: right;
+	}
+	.col-fl-right {
+		text-align: center;
+	}
 }
