@@ -8,7 +8,7 @@ $(function () {
 			var $self = $(this);
 
 			$self.closest('.wrap-menu__main').hide();
-			$('.wrap-wine').show().addClass('bounceInLeft animated');
+			$('.wrap-wine').show().addClass('rollIn animated');
 		});
 
 
@@ -18,6 +18,6 @@ $(function () {
 			var $self = $(this);
 
 			$self.closest('.wrap-menu__main').hide();
-			$('.wrap-vodka').show().addClass('bounceInLeft animated');
+			$('.wrap-vodka').show().addClass('rollIn animated');
 		});
 });

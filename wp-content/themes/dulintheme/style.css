@@ -991,6 +991,10 @@ span + .edit-link:before,
 
 .primary-navigation a {
 	padding: 7px 0;
+	font-size: 0;
+	width: 65px;
+	height: 70px;
+	margin: 0 5px;
 }
 
 /* Secondary Navigation */
@@ -4379,4 +4383,16 @@ a.post-thumbnail:hover {
 }
 .wrap-wine .primary-navigation {
 	float: left;
+}
+.primary-navigation .menu-item:first-child a {
+	background: url(images/kitchen-menu-logo.png) center center no-repeat;
+}
+.primary-navigation .menu-item:nth-child(2) a {
+	background: url(images/bar-menu-logo.png) center center no-repeat;
+}
+.primary-navigation .menu-item:nth-child(3) a {
+	background: url(images/photo-menu-logo.png) center center no-repeat;
+}
+.primary-navigation .menu-item:nth-child(4) a {
+	background: url(images/events-menu-logo.png) center center no-repeat;
 }
