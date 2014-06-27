@@ -103,7 +103,7 @@ button,
 input,
 select,
 textarea {
-	color: #2b2b2b;
+	color: #fff;
 	font-family: Lato, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -853,7 +853,7 @@ span + .edit-link:before,
 	max-width: 100%;
 	position: relative;
 	width: 100%;
-	height: 400px;
+	height: 250px;
 	z-index: 4;
 }
 
@@ -973,6 +973,7 @@ span + .edit-link:before,
 	box-sizing:         border-box;
 	font-size: 14px;
 	padding-top: 24px;
+	/* display: none; */
 }
 
 .primary-navigation.toggled-on {
@@ -1251,7 +1252,7 @@ a.post-thumbnail:hover {
 .site-content .entry-content,
 .site-content .entry-summary,
 .page-content {
-	background-color: #fff;
+	/* background-color: #fff; */
 	padding: 12px 10px 0;
 }
 
@@ -3461,8 +3462,8 @@ a.post-thumbnail:hover {
 
 	.primary-navigation li:hover > a,
 	.primary-navigation li.focus > a {
-		background-color: #24890d;
-		color: #fff;
+		/* background-color: #24890d; */
+		/* color: #fff; */
 	}
 
 	.primary-navigation ul ul a:hover,
@@ -3567,7 +3568,7 @@ a.post-thumbnail:hover {
 @media screen and (min-width: 846px) {
 	.content-area,
 	.content-sidebar {
-		padding-top: 72px;
+		/* padding-top: 72px; */
 	}
 
 	.site-content .has-post-thumbnail .entry-header {
@@ -4226,7 +4227,7 @@ a.post-thumbnail:hover {
 	/* min-height: 100%; */
 	/* background: url(images/bg.png) no-repeat; */
 	/* background-size: 100% 100%; */
-	/* margin: -90px 0 0 0; */
+	/* margin: 120px 0 0 0; */
 }
 .site-title__head {
 	text-align: center;
@@ -4329,4 +4330,52 @@ a.post-thumbnail:hover {
 	.col-fl-right {
 		text-align: center;
 	}
+}
+
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+.wrap-menu__main {
+	height: 110px;
+}
+.wrap-menu__main .logo-link {
+	
+}
+.wrap-menu__main .logo-link__wine {
+    float: right;
+}
+.wrap-menu__main .logo-link__vodka {
+    float: left;
+}
+.wrap-menu {
+    height: 110px;
+	
+    display: none;
+}
+.wrap-vodka {
+
+}
+.wrap-wine {
+	display: none;
+}
+.wrap-wine .logo-link {
+	float: right;
+}
+.logo-link {
+    height: 104px;
+
+    float: left;
+    width: 513px;
+}
+.logo-link__wine {
+    background: url(images/vodka-logo.png) no-repeat;
+
+}
+.logo-link__vodka {
+    background: url(images/wine-logo.png) no-repeat;
+	
+}
+.wrap-wine .primary-navigation {
+	float: left;
 }

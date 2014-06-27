@@ -39,22 +39,33 @@
 				<a class="site-title__head-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				</a>
 			</h1>
-
-			<!-- <div class="search-toggle">
-				<a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'twentyfourteen' ); ?></a>
-			</div> -->
-
-			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
-				<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-			</nav>
-		</div>
-
-		<!-- <div id="search-container" class="search-box-wrapper hide">
-			<div class="search-box">
-				<?php get_search_form(); ?>
+			<div class="wrap-menu__main wrapper">
+				
+				<a href="#" class="logo-link logo-link__wine"></a>
+				<a href="#" class="logo-link logo-link__vodka"></a>
+				
 			</div>
-		</div> -->
+			<div class="wrap-menu wrap-vodka wrapper">
+				
+				<a href="#" class="logo-link logo-link__wine"></a>
+
+				<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+					<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+				</nav>
+
+			</div>
+			<div class="wrap-menu wrap-wine wrapper">
+				
+				<a href="#" class="logo-link logo-link__vodka"></a>
+
+				<nav id="third-navigation" class="site-navigation primary-navigation" role="navigation">
+					<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'third', 'menu_class' => 'nav-menu__third' ) ); ?>
+				</nav>
+
+			</div>
+		</div>
 	</header><!-- #masthead -->
 
 	<div id="main" class="site-main">
