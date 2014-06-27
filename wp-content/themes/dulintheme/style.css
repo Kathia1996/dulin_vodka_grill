@@ -4243,6 +4243,7 @@ a.post-thumbnail:hover {
 .header-main__head {
 	height: auto;
 	width: 100%;
+	position: relative;
 }
 .site-title__head-link {
 	background: url(images/logo.png) no-repeat;
@@ -4369,11 +4370,11 @@ a.post-thumbnail:hover {
     width: 513px;
 }
 .logo-link__wine {
-    background: url(images/vodka-logo.png) no-repeat;
+    background: url(images/wine-logo.png) no-repeat;
 
 }
 .logo-link__vodka {
-    background: url(images/wine-logo.png) no-repeat;
+    background: url(images/vodka-logo.png) no-repeat;
 	
 }
 .wrap-wine .primary-navigation {

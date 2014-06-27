@@ -24,6 +24,8 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
@@ -41,13 +43,13 @@
 			</h1>
 			<div class="wrap-menu__main wrapper">
 				
-				<a href="#" class="logo-link logo-link__wine"></a>
-				<a href="#" class="logo-link logo-link__vodka"></a>
+				<a href="#" id="wine-menu" class="logo-link logo-link__wine"></a>
+				<a href="#" id="vodka-menu" class="logo-link logo-link__vodka"></a>
 				
 			</div>
 			<div class="wrap-menu wrap-vodka wrapper">
 				
-				<a href="#" class="logo-link logo-link__wine"></a>
+				<a href="#" class="logo-link logo-link__vodka"></a>
 
 				<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
 					<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
@@ -57,7 +59,7 @@
 			</div>
 			<div class="wrap-menu wrap-wine wrapper">
 				
-				<a href="#" class="logo-link logo-link__vodka"></a>
+				<a href="#" class="logo-link logo-link__wine"></a>
 
 				<nav id="third-navigation" class="site-navigation primary-navigation" role="navigation">
 					<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
