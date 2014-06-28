@@ -4486,3 +4486,9 @@ a.post-thumbnail:hover {
 .post-main__permalink__inner:hover {
 	background: none;
 }
+.single .wrap-menu__main {
+	display: none;
+}
+.single .content-area {
+	padding-top: 0px;
+}
