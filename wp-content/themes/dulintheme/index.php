@@ -29,9 +29,10 @@ get_header(); ?>
 
 				<div class="post-main-content wrapper">
 					<h1 class="post-main__header"><?php the_title(); ?></h1>
-					<a href="<?php the_permalink(); ?>" class="post-main__permalink">
+					<div class="post-main__permalink">
 						<?php if ( has_post_thumbnail()): ?><?php the_post_thumbnail(array(1000,180), array("class" => "post_thumbnail"));  ?><?php endif;?>
-					</a>
+						<a href="<?php the_permalink(); ?>" class="post-main__permalink post-main__permalink__inner"></a>
+					</div>
 					<?php the_meta(); ?>
 				</div>
 

@@ -4478,3 +4478,11 @@ a.post-thumbnail:hover {
 	width: 1200px;
 	font-size: 20px;
 }
+.post-main__permalink__inner {
+	z-index: 220;
+	border: none;
+	background: url(images/bg-post-excerpt.png);
+}
+.post-main__permalink__inner:hover {
+	background: none;
+}
