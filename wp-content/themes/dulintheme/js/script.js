@@ -9,6 +9,7 @@ $(function () {
 
 			$self.closest('.wrap-menu__main').hide();
 			$('.wrap-wine').show().addClass('rollIn animated');
+			$('#main').addClass('wobble animated').fadeOut();
 		});
 
 
@@ -19,5 +20,6 @@ $(function () {
 
 			$self.closest('.wrap-menu__main').hide();
 			$('.wrap-vodka').show().addClass('rollIn animated');
+			$('#main').addClass('wobble animated').fadeOut();
 		});
 });
