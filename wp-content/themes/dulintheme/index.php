@@ -21,25 +21,26 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 		
-		<?php
-		if ( have_posts() ) : // если имеются записи в блоге.
-		  query_posts('cat=5');   // указываем ID рубрик, которые необходимо вывести.
-		  while (have_posts()) : the_post();  // запускаем цикл обхода материалов блога
-		?>
-			<div class="post-main-content wrapper">
-			<h1 class="post-main__header"><?php the_title(); ?></h1>
-			<a href="<?php the_permalink(); ?>" class="post-main__permalink">
-				<?php if ( has_post_thumbnail()): ?><?php the_post_thumbnail(array(1000,180), array("class" => "post_thumbnail"));  ?><?php endif;?>
-			</a>
-				<div class="post-main-content__text">
-				<?php the_content();
+			<?php
+				if ( have_posts() ) : // если имеются записи в блоге.
+				  query_posts('cat=5');   // указываем ID рубрик, которые необходимо вывести.
+				  while (have_posts()) : the_post();  // запускаем цикл обхода материалов блога
+				?>
+
+				<div class="post-main-content wrapper">
+					<h1 class="post-main__header"><?php the_title(); ?></h1>
+					<a href="<?php the_permalink(); ?>" class="post-main__permalink">
+						<?php if ( has_post_thumbnail()): ?><?php the_post_thumbnail(array(1000,180), array("class" => "post_thumbnail"));  ?><?php endif;?>
+					</a>
+					<?php the_meta(); ?>
+				</div>
+
+				<?php
 				  endwhile;  // завершаем цикл.
 				endif;
-				/* Сбрасываем настройки цикла. Если ниже по коду будет идти еще один цикл, чтобы не было сбоя. */
+			/* Сбрасываем настройки цикла. Если ниже по коду будет идти еще один цикл, чтобы не было сбоя. */
 				wp_reset_query();                
-				?>
-				</div>
-			</div>
+			?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 </div><!-- #main-content -->
