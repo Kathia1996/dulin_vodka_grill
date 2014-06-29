@@ -3559,7 +3559,7 @@ a.post-thumbnail:hover {
 	}
 
 	.full-width .site-content .alignleft {
-		clear: left;
+		/* clear: left; */
 	}
 
 	.full-width .site-content blockquote.alignright,
@@ -4480,8 +4480,8 @@ a.post-thumbnail:hover {
 .site-content p, .site-content span, .site-content strong {
 	color: #fff;
 	margin: 0 auto;
-	width: 1200px;
-	font-size: 20px;
+	/* width: 1200px; */
+	font-size: 18px;
 }
 .post-main__permalink__inner {
 	z-index: 220;
@@ -4513,4 +4513,12 @@ a.post-thumbnail:hover {
 	padding: 0 20px 0 0;
 	line-height: 25px;
 	text-shadow: 3px 3px 1px rgba(0,0,0,0.8);
+}
+.content-photo p {
+	float: left;
+}
+.site-content strong span {
+    font-weight: bold;
+	
+    font-size: 23px;
 }

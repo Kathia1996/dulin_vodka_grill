@@ -61,8 +61,6 @@
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content site-content-custom-page" role="main">
 	
-			<h1>PHOTO WINE CITY GRILL page-99.php</h1>
-			
 			<?php
 				if ( have_posts() ) : // если имеются записи в блоге.
 				  query_posts('cat=6');   // указываем ID рубрик, которые необходимо вывести.

@@ -61,8 +61,6 @@
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content site-content-custom-page" role="main">
 	
-			<h1>EVENTS VODKA CITY GRILL page-95.php</h1>
-			
 			<?php
 				if ( have_posts() ) : // если имеются записи в блоге.
 				  query_posts('cat=9');   // указываем ID рубрик, которые необходимо вывести.
