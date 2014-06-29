@@ -62,7 +62,26 @@
 		<div id="content" class="site-content site-content-custom-page" role="main">
 	
 			<h1>EVENTS VODKA CITY GRILL page-95.php</h1>
-	
+			
+			<?php
+				if ( have_posts() ) : // если имеются записи в блоге.
+				  query_posts('cat=9');   // указываем ID рубрик, которые необходимо вывести.
+				  while (have_posts()) : the_post();  // запускаем цикл обхода материалов блога
+				?>
+
+				<div class="photo-main-content wrapper">
+					<h1 class="photo-post-main__header"><?php the_title(); ?></h1>
+					<div class="content-photo">
+						<?php the_content();?>
+					</div>
+				</div>
+
+				<?php
+				  endwhile;  // завершаем цикл.
+				endif;
+			/* Сбрасываем настройки цикла. Если ниже по коду будет идти еще один цикл, чтобы не было сбоя. */
+				wp_reset_query();                
+			?>
 		</div>
 	</div>
 </div><!-- #main-content -->

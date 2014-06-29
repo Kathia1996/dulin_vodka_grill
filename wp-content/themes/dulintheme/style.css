@@ -462,7 +462,7 @@ hr {
  * to achieve a better experience. See http://core.trac.wordpress.org/ticket/25898.
  */
 ::selection {
-	background: #24890d;
+	background: #80837F;
 	color: #fff;
 	text-shadow: none;
 }
@@ -1259,6 +1259,7 @@ a.post-thumbnail:hover {
 .page-content {
 	/* background-color: #fff; */
 	padding: 12px 10px 0;
+	padding: 0 !important;
 }
 
 .page .entry-content {
@@ -3276,6 +3277,8 @@ a.post-thumbnail:hover {
 		margin-right: 0;
 	
 		/* padding: 0 0 200px 0; */
+		width: 1200px;
+		margin: 0 auto;
 }
 
 	.full-width .site-content .has-post-thumbnail .entry-header,
@@ -4499,4 +4502,15 @@ a.post-thumbnail:hover {
 }
 .main-content-custom-page .content-area{
 	padding-top: 45px;
+}
+.photo-main-content {}
+.photo-main-content .content-photo {}
+.photo-post-main__header {
+	text-align: right;
+	color: #ffcc2f;
+	text-transform: uppercase;
+	font-size: 25px;
+	padding: 0 20px 0 0;
+	line-height: 25px;
+	text-shadow: 3px 3px 1px rgba(0,0,0,0.8);
 }
