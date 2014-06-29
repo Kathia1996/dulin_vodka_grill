@@ -25,7 +25,7 @@ get_header(); ?>
 					the_content();
 					
 				endwhile;
-			?>
+			?>`
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
