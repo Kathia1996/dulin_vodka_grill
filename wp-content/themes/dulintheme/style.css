@@ -4463,9 +4463,8 @@ a.post-thumbnail:hover {
 	font-size: 38px;
 	top: 90px;
 }
-.post-main-content:nth-child(2), .post-main-content:nth-child(3), .post-main-content:nth-child(4) {
+.post-main-content:not(:first-child) {
 	width: 600px;
-	/* padding: 0 0 200px 0; */
 }
 .post-main-content .post-meta li {
 	list-style: none;
@@ -4480,7 +4479,6 @@ a.post-thumbnail:hover {
 .site-content p, .site-content span, .site-content strong {
 	color: #fff;
 	margin: 0 auto;
-	/* width: 1200px; */
 	font-size: 18px;
 }
 .post-main__permalink__inner {
