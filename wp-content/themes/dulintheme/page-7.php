@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * The Header for our theme
  *
@@ -41,13 +41,7 @@
 				<a class="site-title__head-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				</a>
 			</h1>
-			<div class="wrap-menu__main wrapper">
-				
-				<a href="#" id="wine-menu" class="logo-link logo-link__wine"></a>
-				<a href="#" id="vodka-menu" class="logo-link logo-link__vodka"></a>
-				
-			</div>
-			<div class="wrap-menu wrap-wine wrapper">
+			<div class="wrap-menu wrap-wine wrapper" style="display: block;">
 				
 				<a href="#" class="logo-link logo-link__wine"></a>
 
@@ -57,17 +51,28 @@
 				</nav>
 
 			</div>
-			<div class="wrap-menu wrap-vodka wrapper">
-				
-				<a href="#" class="logo-link logo-link__vodka"></a>
-
-				<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
-					<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-				</nav>
-
-			</div>
 		</div>
 	</header><!-- #masthead -->
 
 	<div id="main" class="site-main">
+
+
+<div id="main-content" class="main-content main-content-custom-page">
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content site-content-custom-page" role="main">
+	
+			<?php
+				// Start the Loop.
+				while ( have_posts() ) : the_post();
+	
+					// Include the page content template.
+					get_template_part( 'content', 'page' );
+				endwhile;
+			?>
+	
+		</div>
+	</div>
+</div><!-- #main-content -->
+
+<?php
+get_footer();

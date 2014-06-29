@@ -23,7 +23,7 @@ get_header(); ?>
 ?>
 
 <h1>PAGE.PHP</h1>
-	<!-- <div id="primary" class="content-area">
+	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 	
 			<?php
@@ -40,8 +40,8 @@ get_header(); ?>
 				endwhile;
 			?>
 	
-		</div>#content
-	</div>#primary -->
+		</div>
+	</div>
 </div><!-- #main-content -->
 
 <?php
