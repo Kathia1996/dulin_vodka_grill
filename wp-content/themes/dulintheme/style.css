@@ -3552,7 +3552,7 @@ a.post-thumbnail:hover {
 	.full-width .site-content img.size-large.alignleft,
 	.full-width .site-content img.size-medium.alignleft,
 	.full-width .site-content .wp-caption.alignleft {
-		margin-left: -168px;
+		/* margin-left: -168px; */
 	}
 
 	.full-width .site-content .alignleft {
