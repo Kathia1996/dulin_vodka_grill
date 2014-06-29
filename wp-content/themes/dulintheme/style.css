@@ -822,7 +822,7 @@ span + .edit-link:before,
 	/* max-width: 1260px; */
 	position: relative;
 	height: 100%;
-	min-height: 100%;
+	min-height: 1000px;
 }
 
 .main-content {
@@ -4348,7 +4348,7 @@ a.post-thumbnail:hover {
 }
 
 .wrapper {
-	width: 1200px;
+	width: 1220px;
 	margin: 0 auto;
 }
 .wrap-menu__main {
@@ -4461,7 +4461,11 @@ a.post-thumbnail:hover {
 }
 .post-main-content:first-child .post-main__header {
 	font-size: 38px;
-	top: 90px;
+	top: -10px;
+	line-height: 37px;
+}
+.post-main-content:first-child .post-main__permalink__inner {
+	background: none;
 }
 .post-main-content:not(:first-child) {
 	width: 600px;
@@ -4519,4 +4523,10 @@ a.post-thumbnail:hover {
     font-weight: bold;
 	
     font-size: 23px;
+}
+.content-area {
+	min-height: 1000px;
+}
+.wine-kitch-img, .vodka-kitch-img {
+	display: none;
 }

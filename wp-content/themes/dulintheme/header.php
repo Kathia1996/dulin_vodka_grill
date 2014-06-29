@@ -67,6 +67,19 @@
 				</nav>
 
 			</div>
+
+			<div class="wine-kitch-img wrapper">
+				<?php query_posts('page_id=7');
+				 if ( have_posts() ) : while ( have_posts() ) : the_post();?> 
+				 <?php the_content(); ?>
+				 <?php endwhile; endif; wp_reset_query(); ?>
+			</div>
+			<div class="vodka-kitch-img wrapper">
+				<?php query_posts('page_id=25');
+				 if ( have_posts() ) : while ( have_posts() ) : the_post();?> 
+				 <?php the_content(); ?>
+				 <?php endwhile; endif; wp_reset_query(); ?>
+			</div>
 		</div>
 	</header><!-- #masthead -->
 

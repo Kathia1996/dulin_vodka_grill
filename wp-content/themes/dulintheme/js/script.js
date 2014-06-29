@@ -9,7 +9,10 @@ $(function () {
 
 			$self.closest('.wrap-menu__main').hide();
 			$('.wrap-wine').show().addClass('rollIn animated');
-			$('#main').addClass('wobble animated').fadeOut();
+			$('#content').addClass('bounceOutLeft animated').delay(1000).fadeOut('fast', function() {
+				$('.wine-kitch-img').show().addClass('tada animated');
+			});;
+
 		});
 
 
@@ -20,6 +23,8 @@ $(function () {
 
 			$self.closest('.wrap-menu__main').hide();
 			$('.wrap-vodka').show().addClass('rollIn animated');
-			$('#main').addClass('wobble animated').fadeOut();
+			$('#content').addClass('bounceOutLeft animated').delay(1000).fadeOut('fast', function() {
+				$('.vodka-kitch-img').show().addClass('tada animated');
+			});
 		});
 });
